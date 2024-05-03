@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200" height="200" style="shape-rendering: auto; display: block; background: rgb(255, 255, 255);"><g data-idx="1"><defs data-idx="2">
+  <path fill="none" d="M0 0A15 35 0 0 1 0 70A15 35 0 0 1 0 0" id="patha" data-idx="3"></path>
+</defs><g transform="matrix(1,0,0,1,0,0)" data-idx="4">
+<path stroke-width="3" stroke="#f1f2f3" fill="none" d="M50 15A15 35 0 0 1 50 85A15 35 0 0 1 50 15" id="path" data-idx="5"></path>
+</g><g transform="matrix(0.5000000000000001,0.8660254037844386,-0.8660254037844386,0.5000000000000001,68.30127018922192,-18.30127018922194)" data-idx="6">
+<path stroke-width="3" stroke="#f1f2f3" fill="none" d="M50 15A15 35 0 0 1 50 85A15 35 0 0 1 50 15" id="path" data-idx="7"></path>
+</g><g transform="matrix(-0.4999999999999998,0.8660254037844387,-0.8660254037844387,-0.4999999999999998,118.30127018922192,31.69872981077805)" data-idx="8">
+<path stroke-width="3" stroke="#f1f2f3" fill="none" d="M50 15A15 35 0 0 1 50 85A15 35 0 0 1 50 15" id="path" data-idx="9"></path>
+</g><g transform="matrix(1,0,0,1,0,0)" data-idx="10">
+<circle fill="#e15b64" r="9" cy="15" cx="50" data-idx="11" transform="matrix(1,0,0,1,7.868318557739258,5.196115970611572)">
+  
+</circle>
+</g><g transform="matrix(0.5000000000000001,0.8660254037844386,-0.8660254037844386,0.5000000000000001,68.30127018922192,-18.30127018922194)" data-idx="14">
+<circle fill="#f8b26a" r="9" cy="15" cx="50" data-idx="15" transform="matrix(1,0,0,1,14.912029266357422,31.18755340576172)">
+  
+</circle>
+</g><g transform="matrix(-0.4999999999999998,0.8660254037844387,-0.8660254037844387,-0.4999999999999998,118.30127018922192,31.69872981077805)" data-idx="18">
+<circle fill="#abbd81" r="9" cy="15" cx="50" data-idx="19" transform="matrix(1,0,0,1,11.301423072814941,58.01409912109375)">
+  
+</circle>
+</g><g data-idx="22"></g></g><text data-watermark="true" text-anchor="middle" dominant-baseline="middle" stroke-opacity="0.1" fill="black" fill-opacity="0.1" stroke="white" stroke-width="1" font-size="5.0" x="50" y="50" data-idx="23" style="opacity: 1; font-size: 5px;">LOADING.IO</text></svg>
