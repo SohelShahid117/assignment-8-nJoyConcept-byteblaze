@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,15 +11,15 @@ const Navbar = () => {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1 font-bold text-lg">
-          <li>
+          <Link to="/" className="mr-4">
             <a>Home</a>
-          </li>
-          <li className="text-primary">
+          </Link>
+          <Link to="/blogs" className="text-primary mr-4">
             <a>Blogs</a>
-          </li>
-          <li>
+          </Link>
+          <Link to="/bookmarks" className="mr-4">
             <a>Bookmarks</a>
-          </li>
+          </Link>
         </ul>
         <label className="cursor-pointer grid place-items-center">
           <input
