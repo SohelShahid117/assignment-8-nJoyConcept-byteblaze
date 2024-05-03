@@ -1,25 +1,43 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-lg px-4 fixed z-10 ">
       <div className="flex-1">
-        <a className="btn btn-ghost text-2xl text-secondary normal-case gap-0 font-bold">
+        <Link
+          to="/"
+          className="btn btn-ghost text-2xl text-secondary normal-case gap-0 font-bold"
+        >
           Byte<span className="text-primary">Blaze</span>
-        </a>
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1 font-bold text-lg">
-          <Link to="/" className="mr-4">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "mr-4 text-primary" : "mr-4"
+            }
+          >
             <a>Home</a>
-          </Link>
-          <Link to="/blogs" className="text-primary mr-4">
+          </NavLink>
+          <NavLink
+            to="/blogs"
+            className={({ isActive }) =>
+              isActive ? "mr-4 text-primary" : "mr-4"
+            }
+          >
             <a>Blogs</a>
-          </Link>
-          <Link to="/bookmarks" className="mr-4">
+          </NavLink>
+          <NavLink
+            to="/bookmarks"
+            className={({ isActive }) =>
+              isActive ? "mr-4 text-primary" : "mr-4"
+            }
+          >
             <a>Bookmarks</a>
-          </Link>
+          </NavLink>
         </ul>
         <label className="cursor-pointer grid place-items-center">
           <input
