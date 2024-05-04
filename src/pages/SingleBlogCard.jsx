@@ -89,11 +89,11 @@ const SingleBlogCard = () => {
         </div>
       </article>
       <div>
-        <div className="flex flex-wrap py-6 gap-2 border-t border-dashed dark:border-gray-600">
+        {/* <div className="flex flex-wrap py-6 gap-2 border-t border-dashed dark:border-gray-600">
           {data.tags.map((tag, index) => (
             <Tag tag={tag} key={index}></Tag>
           ))}
-        </div>
+        </div> */}
         <div className="space-y-2">
           <h4 className="text-lg font-semibold">Related posts</h4>
           <ul className="ml-4 space-y-1 list-disc">
