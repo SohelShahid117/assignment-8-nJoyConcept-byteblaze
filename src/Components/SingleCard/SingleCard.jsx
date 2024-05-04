@@ -1,30 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import placeHolderImg from "../../assets/404.jpg";
 
 const SingleCard = ({ blg }) => {
+  const { cover_image, description, id, published_at, title, type_of } = blg;
   console.log(blg);
   return (
     <Link
-      to="/"
+      //   to="/"
+      to={`/blog/${id}`}
       rel="noopener noreferrer"
       href="#"
-      className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50"
+      className="max-w-sm mx-auto border-2 p-2 hover:scale-105 transition hover:border-primary group hover:no-underline focus:no-underline dark:bg-gray-50"
     >
       <img
         role="presentation"
         className="object-cover w-full rounded h-44 dark:bg-gray-500"
-        src="https://source.unsplash.com/random/480x360?1"
+        src={blg.cover_image || placeHolderImg}
       />
       <div className="p-6 space-y-2">
         <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-          In usu laoreet repudiare legendos
+          {blg.title}
         </h3>
-        <span className="text-xs dark:text-gray-600">January 21, 2021</span>
-        <p>
-          Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur,
-          ex has tantas percipit perfecto. At per tempor albucius perfecto, ei
-          probatus consulatu patrioque mea, ei vocent delicata indoctum pri.
-        </p>
+        <span className="text-xs dark:text-gray-600">
+          {new Date(blg.published_at).toLocaleDateString()}
+        </span>
+        <p>{blg.description}</p>
       </div>
     </Link>
   );
