@@ -11,7 +11,7 @@ const SingleCard = ({ blg }) => {
       to={`/blog/${id}`}
       rel="noopener noreferrer"
       href="#"
-      className="max-w-sm mx-auto border-2 p-2 hover:scale-105 transition hover:border-primary group hover:no-underline focus:no-underline dark:bg-gray-50"
+      className="max-w-sm mx-auto border-2 rounded-2xl p-2 hover:scale-105 transition hover:border-primary group hover:no-underline focus:no-underline dark:bg-gray-50"
     >
       <img
         role="presentation"
