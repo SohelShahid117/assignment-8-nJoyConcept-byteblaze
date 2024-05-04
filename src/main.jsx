@@ -2,12 +2,14 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Bookmarks from "./pages/Bookmarks";
 import MainLayout from "./Layout/MainLayout";
 import SingleBlogCard from "./pages/SingleBlogCard";
+import Content from "./Components/Content/Content";
+import Author from "./Components/Author/Author";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,16 @@ const router = createBrowserRouter([
         element: <SingleBlogCard></SingleBlogCard>,
         loader: ({ params }) =>
           fetch(`https://dev.to/api/articles/${params.id}`),
+        children: [
+          {
+            index: true,
+            element: <Content></Content>,
+          },
+          {
+            path: "author",
+            element: <Author></Author>,
+          },
+        ],
       },
       {
         path: "/bookmarks",
