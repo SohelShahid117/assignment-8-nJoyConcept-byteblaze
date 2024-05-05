@@ -1,10 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
 import placeHolderImg from "../../assets/404.jpg";
+import Spinner from "../Spinner/Spinner";
 
 const SingleCard = ({ blg }) => {
   const { cover_image, description, id, published_at, title, type_of } = blg;
   console.log(blg);
+
+  const navigate = useNavigation();
+  console.log(navigate);
+  console.log(navigate.state);
+  if (navigate.state === "loading") return <Spinner></Spinner>;
+
   return (
     <Link
       //   to="/"

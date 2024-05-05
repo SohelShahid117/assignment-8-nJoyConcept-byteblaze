@@ -10,6 +10,7 @@ import MainLayout from "./Layout/MainLayout";
 import SingleBlogCard from "./pages/SingleBlogCard";
 import Content from "./Components/Content/Content";
 import Author from "./Components/Author/Author";
+import toast, { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <App></App> */}
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>
 );
 //10 min

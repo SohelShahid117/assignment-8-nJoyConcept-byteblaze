@@ -10,6 +10,7 @@ import Hero from "./../Components/Hero/Hero";
 //https://dev.to/api/articles------------for API
 //https://dev.to/api/articles?per_page=5
 //https://dev.to/api/articles?per_page=20&top=7
+//https://www.davidhu.io/react-spinners/storybook/?path=/docs/scaleloader--main-----spinner
 
 const Home = () => {
   return (

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Tag from "../Components/Tag/Tag";
+import { CiBookmarkPlus } from "react-icons/ci";
+import { saveBlogs } from "../Utility/Utility";
 
 const SingleBlogCard = () => {
   const data = useLoaderData();
@@ -8,6 +10,11 @@ const SingleBlogCard = () => {
   console.log(data.tags);
 
   const [tabIndex, setTabIndex] = useState(0);
+
+  const handleBookmark = (data) => {
+    console.log(data);
+    saveBlogs(data);
+  };
 
   return (
     <div className="max-w-2xl px-6 py-16 mx-auto space-y-12">
@@ -79,6 +86,9 @@ const SingleBlogCard = () => {
             </svg>
             <span>Author</span>
           </Link>
+          <div onClick={() => handleBookmark(data)}>
+            <CiBookmarkPlus className="text-primary bg-secondary w-10 h-10 rounded-full ml-5" />
+          </div>
         </div>
         <div>
           <Outlet></Outlet>
