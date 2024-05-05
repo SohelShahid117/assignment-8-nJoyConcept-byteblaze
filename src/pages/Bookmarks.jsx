@@ -9,6 +9,8 @@ const Bookmarks = () => {
     console.log(storedBlogs);
     setBlogs(storedBlogs);
   }, []);
+  if (blogs.length < 1)
+    return <h1 className="text-center">No Bookmarks available</h1>;
   return (
     <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-4 md:px-8 lg:px-12 py-8">
       {blogs.map((blg) => (
